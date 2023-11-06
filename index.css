@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(71, 177, 115);
+    padding: 14px;
+    font-family: montserrat;
+    margin: 0;
+}
+
+div#rand {
+    padding: 25px;
+    background-color: rgb(192, 243, 209);
+}
+
+*{  /* vanaf hier is de code voor menu */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgb(253, 253, 253);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {  /* het logo, de positionering koste veel tijd maar is gelukt */
+    color: black;
+    font-size: 41px;
+    line-height: 80px;
+    padding: 3px 15px;
+    font-weight: bolder;
+    background: rgba(27, 177, 90, 0.568);
+    border-radius: 41px;
+    margin-left: 41px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    border-radius: 41px;
+}
+
+a.active,a:hover {  /* de active is degene met de groene achtergrond, word geactiveerd door hover en per pagina waar je bent */
+    background: rgba(27, 177, 90, 0.568);
+    transition: .5s;
+} /* tot hier is code voor menu */
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+  
+  /* links en rechts kolom */
+.column.side {
+    width: 25%;
+}
+  
+  /* midden */
+.column.middle {
+    width: 50%;
+}
+  
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* zorgt voor als het een kleiner scherm is dat stacken ze op elkaar */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+p.fotohome{ /* dit duurde echt veel te lang om goed te krijgen, mag dus blijkbaar niet in een div zitten*/
+	text-align: center;
+}
+
+.infotable, th, td{  /* Hiermee zet je de tabel in het midden en kleur */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: 100px;
+}
+
+th{
+    background-color: rgb(200, 235, 217);
+}
+
+.foto4{  /* Voor de foto iets omhoog te zetten voor het figuur*/
+    top: -75px;
+    position: relative;
+}
+
+.middelste.rij{   /* Zet de middelste foto`s meer naar rechts */
+    position: relative;
+    right: -125px;
+    bottom: -50px;
+}
+
+.gif{
+    left: -225px;
+    position: relative;
+    bottom: -165px;
+}
+
+.versus.capy{
+    position: relative;
+    left: -75px;
+}
+
+.schijding{
+    position: relative;
+    width: 1500px;
+    height: 1px;
+}
+
+.cafe{
+    position: relative;
+    left: -150px;
+}
+
+.middenvid{
+    position: relative;
+    right: -141px;
+    bottom: -175px;
+}
+
+.knop{ /* Uiterlijk knop */
+    background-color: rgb(66, 163, 105);
+    color: #ffffff;
+}
